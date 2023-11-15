@@ -1,0 +1,5 @@
+*
+!.gitignore
+!map_dict.json
+!README.md
+!model_config.json
