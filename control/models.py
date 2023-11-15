@@ -5,7 +5,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from transformers import RobertaForSequenceClassification
 
-from src.control.cvaluate import ClassificationMetric
+from cvaluate import ClassificationMetric
 
 
 class CModelConfig(TypedDict):

@@ -16,11 +16,13 @@ import wandb
 from tqdm import tqdm
 from transformers import GPT2LMHeadModel
 
-from src import logger
-from src.consts import HIDDEN_DIM, PAD_TOKEN, EOS_TOKEN_ID
-from src.control.models import CModelConfig, RNNProbe, RoBERTaEval
-from src.data import loader
-from src.utils import save_checkpoint, num_params
+from models import CModelConfig, RNNProbe, RoBERTaEval
+from svs.data import loader
+from svs.utils import save_checkpoint, num_params
+
+PAD_TOKEN = '[PAD]'
+EOS_TOKEN_ID = 50256
+HIDDEN_DIM = 768
 
 
 def initialize_dataloaders():
